@@ -1,0 +1,21 @@
+# Campus Notice Bot - NapCat bridge. Localhost-bound. One stack = one QQ login (yours).
+# Ports are bound to 127.0.0.1 only: never expose them.
+services:
+  napcat:
+    # Pinned by digest (NapCat.Core 4.18.42 at pin time). Re-pin deliberately, never automatically:
+    # an unattended image change under a live login looks like a new device to QQ.
+    image: mlikiowa/napcat-docker@sha256:696e9574a0f6fb2f86cbecba8a32048f2a5823117dc9b13c6c02637ad890fa8b
+    # MUST stay "no". Docker's own restart plus NapCat's retry once re-logged an account ~100 times in
+    # two hours and QQ invalidated the session. bridge_guard.py is the ONLY thing that starts this container.
+    restart: "no"
+    environment:
+      ACCOUNT: "${ACCOUNT:-}"
+      MODE: ws
+      WEBUI_TOKEN: ${WEBUI_TOKEN}
+    ports:
+      - "127.0.0.1:6099:6099"   # WebUI (QR login)
+      - "127.0.0.1:3001:3001"   # OneBot WebSocket, read by capture/listener.py
+    volumes:
+      - ./data/qq:/app/.config/QQ          # login state (sensitive, never share)
+      - ./data/config:/app/napcat/config
+      - ./data/plugins:/app/napcat/plugins

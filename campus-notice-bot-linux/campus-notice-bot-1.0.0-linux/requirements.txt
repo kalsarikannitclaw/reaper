@@ -1,0 +1,5 @@
+# Runtime packages. Versions marked (tested) are what the owner's venv ran on Python 3.14.9.
+websockets==17.4   # (tested) OneBot WebSocket client
+pillow==13.0.0     # (tested) OCR preprocessing (optional: OCR still runs without it)
+pypdf>=4.0         # PDF notices; optional; tested version UNKNOWN (not installed in the owner's venv)
+tzdata             # time zone database: REQUIRED on Windows for zoneinfo; harmless on Linux

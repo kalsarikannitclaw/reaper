@@ -1,0 +1,8 @@
+{
+ "_comment": "SAMPLE with FAKE ids. Put the QQ group numbers you want watched in 'groups'. Messages from any other group are dropped at the door. Re-read on every message, no restart needed. install.py copies this to capture/groups.json only if you have none.",
+ "groups": [100000001, 100000002],
+ "priority_members": [],
+ "priority_by_group": {},
+ "priority_roles": [],
+ "ignore_users": []
+}

@@ -1,0 +1,85 @@
+{
+ "_comment": "Interview questions per area. 'probe' is the concrete follow-up that turns a self-claim into a supported one: it asks for something only someone who has actually done the thing can answer. Edit freely; the bot reads this file.",
+ "areas": [
+  {
+   "area": "programming",
+   "questions": [
+    {
+     "key": "python",
+     "ask": "How would you describe your Python?",
+     "probe": "What is the last thing you built with it, and what did it do?"
+    },
+    {
+     "key": "cpp",
+     "ask": "And C or C++?",
+     "probe": "What did you use it for most recently?"
+    },
+    {
+     "key": "algorithms",
+     "ask": "How comfortable are you with algorithms and data structures?",
+     "probe": "Which problems or judges have you practised on, roughly how many?"
+    }
+   ]
+  },
+  {
+   "area": "hardware",
+   "questions": [
+    {
+     "key": "verilog",
+     "ask": "Have you written any Verilog or VHDL?",
+     "probe": "Which board or tool did you use, and what did you make run on it?"
+    },
+    {
+     "key": "electronics",
+     "ask": "How about circuits and electronics generally?",
+     "probe": "What have you actually built or measured?"
+    }
+   ]
+  },
+  {
+   "area": "maths",
+   "questions": [
+    {
+     "key": "maths_modelling",
+     "ask": "How much mathematical modelling have you done?",
+     "probe": "Which model or paper did you work on, and what was your part in it?"
+    }
+   ]
+  },
+  {
+   "area": "language",
+   "questions": [
+    {
+     "key": "english_writing",
+     "ask": "How is your written English for a report or paper?",
+     "probe": "What is the longest thing you have written in English, and for what?"
+    }
+   ]
+  },
+  {
+   "area": "availability",
+   "questions": [
+    {
+     "key": "hours_per_week",
+     "ask": "Realistically, how many hours a week can you give a contest?",
+     "kind": "number"
+    },
+    {
+     "key": "has_team",
+     "ask": "Do you already have a team you would enter with?",
+     "kind": "yesno"
+    }
+   ]
+  },
+  {
+   "area": "goals",
+   "questions": [
+    {
+     "key": "goals",
+     "ask": "What are you hoping to get out of this (postgraduate recommendation, experience, a specific contest)?",
+     "kind": "text"
+    }
+   ]
+  }
+ ]
+}

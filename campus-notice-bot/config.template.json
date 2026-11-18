@@ -1,0 +1,1 @@
+{"model": "deepseek-chat", "base_url": "https://api.deepseek.com", "key_env": "DEEPSEEK_API_KEY", "tz": "Asia/Shanghai", "manual_page_assist": true}

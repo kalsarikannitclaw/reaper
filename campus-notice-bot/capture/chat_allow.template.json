@@ -1,0 +1,7 @@
+{
+  "_comment": "Template for capture/chat_allow.json (does NOT exist yet; the owner creates it). Adapter stays off unless enabled is true AND owners lists the owner's QQ number. groups stays empty: the bot never answers in groups.",
+  "enabled": false,
+  "private": true,
+  "owners": [],
+  "groups": []
+}

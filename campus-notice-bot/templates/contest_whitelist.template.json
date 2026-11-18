@@ -1,0 +1,12 @@
+{
+ "version_id": "sample-0",
+ "scope": "FAKE SAMPLE. Replace with your school + faculty",
+ "valid_from": null, "valid_to": null,
+ "provenance": {"source_url": "https://www.example-school.edu.cn/fake-list.pdf", "publish_date": null, "file_name": "fake-list.pdf", "page_row": null, "note": "FAKE sample entries, delete them"},
+ "confirmed_by_user": false,
+ "confirmed_at": null,
+ "entries": [
+  {"no": 1, "name": "Sample National Programming Contest (FAKE)", "aliases": ["SNPC"], "organiser": "Fake Association", "level": "A", "credit": "2"},
+  {"no": 2, "name": "Sample Mathematical Modelling Contest (FAKE)", "aliases": [], "level": "B"}
+ ]
+}

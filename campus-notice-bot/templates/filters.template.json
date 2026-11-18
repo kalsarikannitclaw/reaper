@@ -1,0 +1,6 @@
+{
+  "_comment": "Spam filter. block_senders: QQ numbers always dropped. block_keywords: messages containing one are dropped. allow_keywords: never rule-filtered.",
+  "block_senders": [],
+  "block_keywords": [],
+  "allow_keywords": []
+}

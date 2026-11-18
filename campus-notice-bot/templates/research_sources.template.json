@@ -1,0 +1,26 @@
+{
+ "_comment": "Hosts the bot may open, most authoritative first (allowlist: nothing else is ever fetched). To add YOUR school: copy '_example_school' to 'school', replace the FAKE domain with your school's real one, delete this note. Second school = config, not code.",
+ "allow": [
+  {"host": "moe.gov.cn", "what": "Ministry of Education: contests it names are the top of the hierarchy"},
+  {"host": "cahe.edu.cn", "what": "China Association of Higher Education: national contest ranking"},
+  {"host": "chinadegrees.cn", "what": "degree and programme records"},
+  {"host": "edu.cn", "what": "education network domains"}
+ ],
+ "school": {},
+ "_example_school": {
+  "_note": "FAKE example. www.example-school.edu.cn does not exist. Rename this key to \"school\" to use the shape.",
+  "name": "Example University",
+  "host": "www.example-school.edu.cn",
+  "follow_hosts": ["example-school.edu.cn"],
+  "notice_urls": [
+   "https://www.example-school.edu.cn/tzgg/",
+   {"url": "https://jwc.example-school.edu.cn/list/exams.html", "name": "Academic affairs notices",
+    "notice_link": "/info/\\d+/\\d+\\.htm", "content": "wp_articlecontent|v_news_content", "max_notices": 20, "max_files": 5, "enabled": false}
+  ]
+ },
+ "_example_tunnel": {
+  "_note": "ONLY if your network reaches the school site over just one IP family or not at all from this machine (needs tunnel/relay.py, present in packages built after stage S5 merged). Rename to \"tunnel\" to use.",
+  "relay": "http://127.0.0.1:8787", "family": "auto",
+  "routes": [{"match": "example-school.edu.cn", "via": "relay", "family": "4"}]
+ }
+}
